@@ -1,9 +1,22 @@
+/**
+ * Author: Manpreet Sandhu
+ * File: LocationStats.java
+ **/
 package com.manpreetsandhu.coronavirustracker.models;
 
 public class LocationStats {
     private String state;
     private String country;
     private int latestTotalCases;
+    private int diffFromPreviousDate;
+
+    public int getDiffFromPreviousDate() {
+        return diffFromPreviousDate;
+    }
+
+    public void setDiffFromPreviousDate(int diffFromPreviousDate) {
+        this.diffFromPreviousDate = diffFromPreviousDate;
+    }
 
     public String getState() {
         return state;

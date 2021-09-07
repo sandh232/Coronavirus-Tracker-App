@@ -1,3 +1,7 @@
+/**
+ * Author: Manpreet Sandhu
+ * File: CoronavirusTrackerApplication.java
+ **/
 package com.manpreetsandhu.coronavirustracker;
 
 import org.springframework.boot.SpringApplication;
