@@ -6,6 +6,7 @@ package com.manpreetsandhu.coronavirustracker.controllers;
 
 import com.manpreetsandhu.coronavirustracker.models.LocationStats;
 import com.manpreetsandhu.coronavirustracker.services.CoronaVirusDataService;
+import jdk.jshell.execution.LoaderDelegate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,6 +25,8 @@ public class HomeController {
         List<LocationStats> allStats = coronaVirusDataService.getAllStats();
         int totalCases = allStats.stream().mapToInt(stat -> stat.getLatestTotalCases()).sum();
         int totalNewCases = allStats.stream().mapToInt(stat -> stat.getDiffFromPreviousDate()).sum();
+        List<LocationStats> newStats = new ArrayList<>();
+
         model.addAttribute("locationStats", allStats);
         model.addAttribute("totalReportedCases", totalCases);
         model.addAttribute("totalNewCases",totalNewCases);
