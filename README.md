@@ -1,3 +1,3 @@
 # Coronavirus Tracker App
 
-<img src="/images/coronavirusTrackerApp" width="100%" height="100%" >
+<img src="/images/coronavirusTrackerApp.png" width="100%" height="100%" >
